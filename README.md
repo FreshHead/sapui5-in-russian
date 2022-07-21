@@ -25,7 +25,7 @@
 1. Разработка в облаке.
 1. Разработка на базе UI5 CLI.
 
-### 1.Загрузить на страницу bootstrap скрипт через CDN (Content Deliviry Network).
+### 1. Загрузить на страницу bootstrap скрипт через CDN (Content Deliviry Network).
 По простому - создать index.html и с помощью тэга <script> добавить скрипт sap-ui-core.js.
  ```html
 <!DOCTYPE html>
