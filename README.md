@@ -20,6 +20,33 @@
 2. bindings
 
 ## Подготовка окружения разработчика
+Можно выделить 3 основных способа для написания и запуска кода на SAPUI5.
+1.Загрузить на страницу bootstrap скрипт через CDN (Content Deliviry Network). По простому - создать index.html и с помощью тэга <script> добавить скрипт sap-ui-core.js.
+ ```html
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Quickstart Tutorial</title>
+	<script id="sap-ui-bootstrap"
+		src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+		data-sap-ui-theme="sap_belize"
+		data-sap-ui-libs="sap.m"
+		data-sap-ui-resourceroots='{"Quickstart": "./"}'
+		data-sap-ui-onInit="module:Quickstart/index"
+		data-sap-ui-compatVersion="edge"
+		data-sap-ui-async="true">
+	</script>
+</head>
+<body class="sapUiBody" id="content"></body>
+</html>
+ ```
+Подробнее: https://sapui5.hana.ondemand.com/1.90.7/#/topic/851bde42e4e1410c96abbe402fa9128c
+ 
+ Для разработки вариант не очень, но подойдёт когда нужно сделать маленький примерчик и выложить на codepen:
+ https://codepen.io/vinipolicena/pen/JoegJQ
+ В таких случаях описывают контролы с помощью JS, но бывает делают это в html: https://codepen.io/JEE42/pen/KaQege.
+
 Для начала запустим чужой проект, чтобы убедиться что всё работает. Заодно мы увидим пример приложения которые пишут на SAPUI5.
 
 1. Установите ноду и UI5 CLI по инструкции:
